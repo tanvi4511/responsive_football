@@ -29,7 +29,7 @@ h1{
 
 /* Top-banner */
 .banner{
-    background-color: aqua;
+    background-color: #2d25a0;
 }
 .container{
   display: flex;
@@ -40,6 +40,9 @@ h1{
 .half-width{
     width:40%;
     align-items: center;
+}
+.half-width h1{
+    color: white;
 }
 .half-width > div{
     width: 556px;
@@ -141,6 +144,9 @@ h4{
 .schedule_section h1{
     font-size: 56px;
 }
+.schedule_info{
+padding-left: 24px;
+}
 .schedule_info p{
  line-height: 10px;
 }
@@ -196,13 +202,78 @@ footer p{
 }
 
 
+
+
+/*Tab responsive*/
+@media only screen and (max-device-width: 1024px) {
+
+    /*Top-banner responsive*/
+        h1{
+            font-size: 36px;
+            line-height: 50px;
+            margin: 10px 0 30px 0;
+        }
+        .container{
+            padding: 0 32px;
+          
+        }
+        .half-width{
+            width: 100%;
+        }
+        .half-width > div{
+            width: 330px;
+            height: 260px;;
+            padding: 50px 0 60px 0;
+        }
+    
+     /*plaayers responsive*/
+        .players_container{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .players_container{
+            margin: 47px 15px 15px 15px;
+            width: 100%;
+        }
+    
+    /*club responsive*/
+        .club{
+            margin: 0 20px;
+        }
+        .cLub_container{
+            width: 100%;
+            margin: 50px 20px;
+            padding: 20px;  
+        }
+        .cLub_container h3{
+            font-size: 36px;
+        }
+    
+    /*schedule responsive*/
+         .schedule_section{
+             margin: 50px 20px;
+        }
+        .schedule_section h1{
+            font-size: 36px;
+        }
+        .schedule_container{
+            grid-template-columns: repeat(2,1fr);
+            width: 100%; 
+        }
+    
+    /* footer responsive */
+        .footer_img{
+            width: 75%;
+        }
+    }
+    
+
 /*Mobile responsive*/
-@media screen and (max-width:668px) {
+@media only screen and (max-device-width: 668px) {
 
 /*Top-banner responsive*/
     h1{
-        font-size: 36px;
-        line-height: 50px;
+        font-size: 36px ;
+        line-height: 50px ;
         margin: 50px 0 30px 0;
     }
     .container{
@@ -245,6 +316,9 @@ footer p{
      .schedule_section{
          margin: 50px 20px;
     }
+    .schedule_section h1{
+        font-size: 36px;
+    }
     .schedule_container{
         grid-template-columns: 1fr;
         width: 100%; 
@@ -255,3 +329,8 @@ footer p{
         width: 75%;
     }
 }
+
+
+
+
+
